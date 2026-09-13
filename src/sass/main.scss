@@ -1,0 +1,13 @@
+@forward 'helpers';
+@forward 'sections';
+
+body
+{
+    background-color: var(--camel);
+
+    min-height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,133 @@
+.main {
+    transform-origin: center;
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    width: clamp(22rem, 20rem + 10vw, 60rem);
+
+    border-radius: 10px;
+    
+    animation: main-appear 0.5s;
+}
+
+@keyframes main-appear {
+    from {
+        transform: translateY(50%);
+    }
+    
+    to {
+
+    }
+}
+
+.main__category {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    background-color: var(--charcoal-brown);
+    padding: var(--spacing-200);
+    
+    color: var(--dry-sage)
+}
+
+.main__image {
+    width: 100%;
+    border-radius: inherit;
+
+    object-fit: cover;
+}
+
+.main__info {
+    position: absolute;
+    
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+
+    color: var(--dry-sage);
+
+    background-color: var(--charcoal-brown);
+
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.main__title,
+.main__description,
+.main__runtime,
+.main__rating,
+.main__genres {
+    // animation: appear 0.5s;
+}
+
+.main__title {
+    font-size: clamp(1.8rem, 0.1rem + 5vw, 2.6rem);
+
+    padding: var(--spacing-100);
+}
+
+.main__description {
+    padding: var(--spacing-100  );
+}
+
+.main__ribbon {
+    display: flex;
+    align-items: center;
+
+    gap: var(--spacing-200);
+
+    background-color: var(--dry-sage);
+    color: var(--charcoal-brown);
+
+    padding: var(--spacing-100);
+
+    border-radius: inherit;
+}
+
+.main__genres {
+    list-style: none;
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@keyframes swipe-right {
+    from {
+    }
+    to {
+        transform: translateX(100%) translateY(50%) rotateZ(90deg);
+        opacity: 0.1;
+    }
+}
+
+@keyframes swipe-left {
+    from {
+    }
+    to {
+        transform: translateX(-100%) translateY(50%) rotateZ(-90deg);
+        opacity: 0.1;
+    }
+}
+
+@keyframes appear {
+    from
+    {
+        opacity: 0;
+    }
+    to{ 
+        opacity: 1;
+    }
+}
