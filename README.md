@@ -1,4 +1,4 @@
-##Fleaa (Film, libri e altro ancora)
+## Fleaa (Film, libri e altro ancora)
 
 Tinder-like platforma care combina goodreads cu letterboxd, ratemusic, etc.
 Ideea e sa centralizeze toate platformele intr-un singur loc si sa ajute oamenii sa descopere media noua.
